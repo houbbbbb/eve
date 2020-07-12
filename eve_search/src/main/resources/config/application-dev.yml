@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    include: dev-eureka, dev-search
+  application:
+    name: eve_search
+server:
+  port: 8001
+  servlet:
+    context-path: /

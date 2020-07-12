@@ -1,0 +1,17 @@
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    region: beijing
+    availability-zones:
+      beijing: zone1
+    service-url:
+      zone1: http://localhost:10000
+    prefer-same-zone-eureka: true
+  server:
+    peer-eureka-nodes-update-interval-ms: 600000
+    wait-time-in-ms-when-sync-empty: 0
+    enable-self-preservation: true
+  instance:
+    hostname: eve_server
+    instance-id: eve_server

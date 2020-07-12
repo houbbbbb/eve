@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    include: dev-eureka
+  application:
+    name: eve_server
+server:
+  port: 10000
+  servlet:
+    context-path: /

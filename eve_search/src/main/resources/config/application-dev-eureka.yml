@@ -1,0 +1,8 @@
+eureka:
+  client:
+    region: beijing
+    availability-zones:
+      beijing: zone1
+    service-url:
+      zone1: http://localhost:10000/eureka
+    prefer-same-zone-eureka: true
